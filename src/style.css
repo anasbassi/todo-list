@@ -1,0 +1,52 @@
+.main-container {
+  background-color: white;
+  width: 40%;
+  margin: auto;
+  box-shadow: 2px 2px 2px 2px;
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  padding: 20px;
+  font-size: medium;
+  margin: 0;
+}
+
+.add {
+  border: 0;
+  padding: 20px;
+}
+
+.btn {
+  border: 0;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+.check {
+  display: flex;
+  padding-left: 20px;
+}
+
+.checkbox {
+  margin-right: 20px;
+}
+
+.lists {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  margin: 0;
+}
+
+hr {
+  height: 1px;
+  background-color: #c4c4c4;
+  border: none;
+  margin: 0;
+}
