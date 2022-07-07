@@ -7,19 +7,12 @@
   font-weight: 300;
 }
 
-.title-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 30px;
-}
-
-.title-container button {
+form input {
   border: none;
   background-color: white;
-  width: 10%;
 }
 
-form input, form button {
+form button {
   border: none;
   background-color: white;
 }
@@ -79,6 +72,18 @@ hr {
 .remove {
   border: none;
   background-color: white;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.title-container button {
+  border: none;
+  background-color: white;
+  width: 10%;
 }
 
 .todo {
