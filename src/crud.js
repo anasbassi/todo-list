@@ -33,7 +33,7 @@ addBtn.addEventListener('click', (e) => {
   const obj = {
     description: input,
     completed: false,
-    index: task.length,
+    index: task.length + 1,
   };
   task.push(obj);
   localStorage.setItem('task', JSON.stringify(task));
@@ -43,7 +43,7 @@ addBtn.addEventListener('click', (e) => {
 const removeTask = (index) => {
   const newArr = task.filter((element) => element.index !== index);
   task.length = 0;
-  let i = 0;
+  let i = 1;
   newArr.forEach((element) => {
     element.index = i;
     i += 1;
