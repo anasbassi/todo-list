@@ -1,9 +1,10 @@
 # To-do-List
 
 >To-do-List website is a page that contains information that you already listed of shores and things to do .
+>The list can be generated from the application by writing in the field provided,
+>the list can also be editted, and removed.
 
 The pull request is opened to get a review on the project and check for any required changes.
-
 
 ## Built With
 
