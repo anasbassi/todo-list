@@ -7,6 +7,23 @@
   font-weight: 300;
 }
 
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+
+.title-container button {
+  border: none;
+  background-color: white;
+  width: 10%;
+}
+
+form input, form button {
+  border: none;
+  background-color: white;
+}
+
 h1 {
   padding: 20px;
   font-size: medium;
@@ -16,6 +33,7 @@ h1 {
 .add {
   border: 0;
   padding: 20px;
+  width: 80%;
 }
 
 .btn {
@@ -27,11 +45,19 @@ h1 {
 
 .check {
   display: flex;
-  padding-left: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 35px;
+  padding: 5px;
 }
 
-.checkbox {
-  margin-right: 20px;
+.enter {
+  border: none;
+  background-color: white;
+}
+
+.fa-trash-can {
+  pointer-events: none;
 }
 
 .lists {
@@ -48,5 +74,15 @@ hr {
   height: 1px;
   background-color: #c4c4c4;
   border: none;
-  margin: 0;
+}
+
+.remove {
+  border: none;
+  background-color: white;
+}
+
+.todo {
+  border: none;
+  font-size: 1em;
+  width: 50%;
 }

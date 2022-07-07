@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>T0-Do List App</title>
 </head>
 <body>
-    <section class="main-container">
-        <h1>Today's To do</h1>
-        <hr>
-        <input class="add" type="text" placeholder="Add to your list...">
-        <hr>
-        <ul class="lists"></ul>
-        <button class="btn">Clear all completed</button>
-    </section>
+  <section class="main-container">
+    <div class="title-container">
+      <h1>Today's To do</h1>
+      <button class="btn btn-refresh">
+        <i class="fa-solid fa-arrows-rotate"></i>
+      </button>
+    </div>
+    <hr>
+    <form class="add-container" action="">
+      <input class="add" type="text" placeholder="Add to your list..."> 
+      <button class="enter" type="submit"><i class="fa-solid fa-arrows-rotate"></i></button>   
+    </form>
+    <hr>
+    <ul class="lists"></ul>
+    <button class="btn">Clear all completed</button>
+  </section>
 </body>
 </html>
