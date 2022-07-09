@@ -1,4 +1,4 @@
-
+/* eslint-disable*/
 import { clear, clearAllTask } from './clear.js';
 import task from './list.js';
 

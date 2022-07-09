@@ -23,22 +23,19 @@ The pull request is opened to get a review on the project and check for any requ
 > Open “Git Bash” and change the current working directory to the location where you want the cloned directory.
 > Type git clone in the terminal, paste the URL you copied earlier, and press “enter” to create your local clone.
 > Syntax:
-$ git clone {https://github.com/anasbassi/todo-list}
+$ git clone(<https://github.com/anasbassi/todo-list>)
 
 ## 🛠 Installation & Set Up
 
 1. Install Node Modules
-   ```sh
    npm install
 2. Start the development server
-   ```sh
    npm start
 3. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 ## 🚀 Building and Running for Production
 
 1. Generate a full static production build
-   ```sh
    npm run build
 
 ## Authors
