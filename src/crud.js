@@ -1,16 +1,21 @@
+/* eslint-disable*/
+import { clear, clearAllTask } from './clear.js';
+import task from './list.js';
+
+const clearAll = document.querySelector('.btn');
 const addBtn = document.querySelector('.enter');
 const todoInputEl = document.querySelector('.add');
 const oneContainer = document.querySelector('.lists');
-const task = JSON.parse(localStorage.getItem('task')) || [];
 
 const renderTasks = () => {
   oneContainer.innerHTML = '';
   task.forEach((element) => {
     const oneContainer = document.querySelector('.lists');
     const chore = document.createElement('div');
+    const flag = element.completed ? 'checked' : '';
     chore.classList.add('list-info');
     chore.innerHTML = ` <div class="check">
-              <input type="checkbox">
+              <input type="checkbox"  class="check" data-clear="${element.index}" ${flag}>
               <input type="text" class="todo" data-desc="${element.index}" value="${element.description}"/>
               <div class="icon">
               <button class="remove" id="${element.index}">
@@ -65,9 +70,7 @@ const update = (e) => {
 
   if (!clicked) return;
   clicked.addEventListener('keyup', () => {
-    const task = JSON.parse(localStorage.getItem('task')) || [];
     const targetData = parseInt(clicked.getAttribute('data-desc'), 10);
-
     const update = task.find((element) => element.index === targetData);
 
     update.description = clicked.value.trim();
@@ -76,3 +79,9 @@ const update = (e) => {
 };
 
 oneContainer.addEventListener('click', update);
+
+oneContainer.addEventListener('click', clear);
+clearAll.addEventListener('click', () => {
+  clearAllTask();
+  renderTasks();
+});
