@@ -1,3 +1,4 @@
+
 import { clear, clearAllTask } from './clear.js';
 import task from './list.js';
 
@@ -69,9 +70,7 @@ const update = (e) => {
 
   if (!clicked) return;
   clicked.addEventListener('keyup', () => {
-    // const task = JSON.parse(localStorage.getItem('task')) || [];
     const targetData = parseInt(clicked.getAttribute('data-desc'), 10);
-
     const update = task.find((element) => element.index === targetData);
 
     update.description = clicked.value.trim();
@@ -82,9 +81,7 @@ const update = (e) => {
 oneContainer.addEventListener('click', update);
 
 oneContainer.addEventListener('click', clear);
-
 clearAll.addEventListener('click', () => {
   clearAllTask();
   renderTasks();
-  
 });

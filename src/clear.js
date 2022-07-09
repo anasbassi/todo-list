@@ -1,4 +1,5 @@
-import task from "./list";
+import task from './list';
+
 export const clear = (e) => {
   const clicked = e.target.closest('.check');
   if (!clicked) return;
