@@ -16,7 +16,7 @@ The pull request is opened to get a review on the project and check for any requ
 
 ## Live Demo
 
- https://anasbassi.github.io/portfolio/
+ https://myto-do-list-app.netlify.app/
 
 ### Setup
 
