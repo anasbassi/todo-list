@@ -14,6 +14,10 @@ The pull request is opened to get a review on the project and check for any requ
 - Javascript
 - Webpack
 
+## Live Demo
+
+ https://anasbassi.github.io/portfolio/
+
 ### Setup
 
 > Open GitHub and go to my GitHub repository name: to do list.to clone.
